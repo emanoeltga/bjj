@@ -5,17 +5,28 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from './shared/shared.module';
+import { EventosComponent } from './modules/schedule/eventos/eventos.component';
+import { RankComponent } from './modules/schedule/rank/rank.component';
+import { KeyComponent } from './modules/schedule/key/key.component';
+import { SobreComponent } from './modules/sobre/sobre.component';
+import { HomeRoutingModule } from './modules/home/home-routing.module';
+import { MaintenanceModule } from './modules/maintenance/maintenance.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EventosComponent,
+    RankComponent,
+    KeyComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     NgbDropdownModule,
-    SharedModule
+    SharedModule,
+    MaintenanceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

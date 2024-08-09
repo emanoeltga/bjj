@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">BJJ  - MT </a>
+    <a class="navbar-brand" routerLink="home">BJJ  - MT </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,10 +19,12 @@
           <ul class="dropdown-menu" ngbDropdownMenu >
             <li ngbDropdownItem ><a class="dropdown-item" routerLink="academia">Academia</a></li>
             <li ngbDropdownItem ><a class="dropdown-item" routerLink="atleta">Atleta</a></li>
+            <li ngbDropdownItem ><a class="dropdown-item" routerLink="eventos">Evento</a></li>
             <li ngbDropdownItem ><hr class="dropdown-divider"></li>
             <li ngbDropdownItem ><a class="dropdown-item" routerLink="categoria">Categoria</a></li>
             <li ngbDropdownItem ><hr class="dropdown-divider"></li>
             <li ngbDropdownItem ><a class="dropdown-item" routerLink="usuario">Usuário</a></li>
+
           </ul>
         </li>
 
@@ -33,13 +35,10 @@
             Eventos
           </a>
           <ul class="dropdown-menu" ngbDropdownMenu>
-            <li ngbDropdownItem ><a class="dropdown-item" href="#">Hoje</a></li>
-            <li ngbDropdownItem ><a class="dropdown-item" href="/prototype/pages/create_appointment.html">Agendar</a></li>
-            <li ngbDropdownItem ><a class="dropdown-item" href="#">Cancelar</a></li>
+            <li ngbDropdownItem ><a class="dropdown-item" routerLink="eventos">Eventos</a></li>
+            <li ngbDropdownItem ><a class="dropdown-item" routerLink="ranks">Ranking</a></li>
             <li ngbDropdownItem ><hr class="dropdown-divider"></li>
-            <li ngbDropdownItem ><a class="dropdown-item" href="#">Histórico de envetos</a></li>
-            <li ngbDropdownItem ><hr class="dropdown-divider"></li>
-            <li ngbDropdownItem ><a class="dropdown-item" href="#">Cadastrar Eventos</a></li>
+            <li ngbDropdownItem ><a class="dropdown-item" routerLink="keys">Gerar Chaves</a></li>
           </ul>
         </li>
 
